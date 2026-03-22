@@ -4,9 +4,9 @@ body{
 		background-color: #b3b3b3;
 }
 #image{
-    line-height:auto;
-		width: 750px;
-    height: auto;
+    line-height:650px;
+		width: 950px;
+    height: 534px;
 		border:5px solid black;
 		margin:0 auto;
     background-image: url('img/EnterTheGungeon.jpg');
