@@ -19,7 +19,7 @@ function unDo(){
     2) Change the text  of the div with the id = "image" 
     back to the original text.  You can use the html code to see what that original text was
     */
-        getElementById("image").style.backgroundImage = "src(img/Enter_The_Gungeon.jpeg)";
+        getElementById("image").style.backgroundImage = "src(img/EnterTheGungeon.jpg)";
         getElementById("image-text").innerHTML = "Get ready to Enter The Gungeon!";
 	}
 
