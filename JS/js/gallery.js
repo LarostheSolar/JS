@@ -1,4 +1,4 @@
-/*Name this external file gallery.js*/
+console.log("JS file is connected to HTML! Woo!")
 
 function upDate(previewPic){
  /* In this function you should 
@@ -8,10 +8,11 @@ function upDate(previewPic){
     2) Change the text  of the div with the id = "image" 
     to the alt text of the preview image 
     */
-  
+        getElementById("image").style.backgroundImage = "url(" + previewPic.src + ")";
+        getElementById("image-text").innerHTML = previewPic.alt;
 	}
 
-	function unDo(){
+function unDo(){
      /* In this function you should 
     1) Update the url for the background image of the div with the id = "image" 
     back to the orginal-image.  You can use the css code to see what that original URL was
@@ -19,5 +20,14 @@ function upDate(previewPic){
     2) Change the text  of the div with the id = "image" 
     back to the original text.  You can use the html code to see what that original text was
     */
-		
+        getElementById("image").style.backgroundImage = "url(img/Enter_The_Gungeon.jpeg)";
+        getElementById("image-text").innerHTML = "Get ready to Enter The Gungeon!";
 	}
+
+function onMouseOver(previewPic){
+    upDate(previewPic);
+}
+
+function onMouseOut(){
+    unDo();
+}
