@@ -4,13 +4,12 @@ body{
 		background-color: #b3b3b3;
 }
 #image{
-    line-height:650px;
-		width: 575px;
-    height: 650px;
+    line-height:auto;
+		width: 750px;
+    height: auto;
 		border:5px solid black;
 		margin:0 auto;
     background-image: url('img/EnterTheGungeon.jpg');
-    background-color: #BB00BB;
     background-repeat: no-repeat;
     color:#FFFFFF;
     text-align: center;
