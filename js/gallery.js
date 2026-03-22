@@ -7,8 +7,8 @@ function upDate(previewPic){
     2) Change the text  of the div with the id = "image" 
     to the alt text of the preview image 
     */
-        getElementById("image").style.backgroundImage = "src(" + previewPic.src + ")";
-        getElementById("image-text").innerHTML = previewPic.alt;
+        document.getElementById("image").style.backgroundImage = "url(" + previewPic.src + ")";
+        document.getElementById("image-text").innerHTML = previewPic.alt;
 	}
 
 function unDo(){
@@ -19,14 +19,6 @@ function unDo(){
     2) Change the text  of the div with the id = "image" 
     back to the original text.  You can use the html code to see what that original text was
     */
-        getElementById("image").style.backgroundImage = "src(img/EnterTheGungeon.jpg)";
-        getElementById("image-text").innerHTML = "Get ready to Enter The Gungeon!";
+        document.getElementById("image").style.backgroundImage = "url(img/EnterTheGungeon.jpg)";
+        document.getElementById("image-text").innerHTML = "Get ready to Enter The Gungeon!";
 	}
-
-function onMouseOver(previewPic){
-    upDate(previewPic);
-}
-
-function onMouseOut(){
-    unDo();
-}
