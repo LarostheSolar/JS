@@ -1,4 +1,3 @@
-console.log("JS file is connected to HTML! Woo!")
 
 function upDate(previewPic){
  /* In this function you should 
@@ -9,7 +8,7 @@ function upDate(previewPic){
     to the alt text of the preview image 
     */
         getElementById("image").style.backgroundImage = "url(" + previewPic.src + ")";
-        getElementById("image-text").innerHTML = previewPic.alt;
+        getElementById("image-text").innerHTML = preview.alt;
 	}
 
 function unDo(){
